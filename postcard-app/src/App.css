@@ -1,0 +1,143 @@
+/* General App container */
+.App {
+  max-width: 960px; /* Limit width */
+  margin: 20px auto; /* Center the app */
+  padding: 20px;
+  background-color: #fff; /* White background for the app area */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 8px;
+}
+
+.App h1 {
+  text-align: center;
+  color: #282c34; /* Dark heading */
+  margin-bottom: 30px;
+}
+
+/* Postcard List */
+.postcard-list {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Responsive grid */
+  gap: 20px; /* Spacing between items */
+}
+
+/* Individual Postcard Item */
+.postcard-item {
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 6px;
+  background-color: #f9f9f9; /* Light background for items */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: space-between; /* Push buttons to bottom */
+}
+
+.postcard-item h3 {
+  margin-top: 0;
+  color: #0056b3; /* Title color */
+}
+
+.postcard-item p {
+  flex-grow: 1; /* Allow content to take up space */
+  margin-bottom: 15px;
+}
+
+/* Postcard Form */
+.postcard-form {
+  border: 1px dashed #ccc; /* Dashed border for the form */
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 6px;
+  background-color: #fdfdfd;
+}
+
+.postcard-form h2 {
+  margin-top: 0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.postcard-form div {
+  margin-bottom: 15px; /* Space between form rows */
+}
+
+.postcard-form label {
+  display: block; /* Labels on their own line */
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.postcard-form input[type="text"],
+.postcard-form textarea {
+  width: calc(100% - 12px); /* Full width minus padding */
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.postcard-form textarea {
+  min-height: 80px; /* Minimum height for textarea */
+  resize: vertical; /* Allow vertical resize */
+}
+
+/* Generic Button Styles */
+.button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.95rem;
+  margin-right: 8px; /* Spacing between adjacent buttons */
+  transition: background-color 0.2s ease;
+}
+
+.button:last-child {
+  margin-right: 0;
+}
+
+/* Specific Button Styles */
+.button-add {
+  background-color: #28a745; /* Green */
+  color: white;
+  display: block; /* Make it a block element */
+  width: fit-content; /* Size to content */
+  margin: 20px auto; /* Center the add button */
+}
+.button-add:hover {
+  background-color: #218838;
+}
+
+.button-edit {
+  background-color: #ffc107; /* Yellow */
+  color: #333;
+}
+.button-edit:hover {
+  background-color: #e0a800;
+}
+
+.button-delete {
+  background-color: #dc3545; /* Red */
+  color: white;
+}
+.button-delete:hover {
+  background-color: #c82333;
+}
+
+.button-submit {
+  background-color: #007bff; /* Blue */
+  color: white;
+}
+.button-submit:hover {
+  background-color: #0056b3;
+}
+
+.button-cancel {
+  background-color: #6c757d; /* Gray */
+  color: white;
+}
+.button-cancel:hover {
+  background-color: #5a6268;
+}
